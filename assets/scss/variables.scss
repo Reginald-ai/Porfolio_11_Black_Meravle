@@ -1,0 +1,73 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$dark-1: hsl(217, 28%, 15%);
+$dark-2: hsl(218, 28%, 13%);
+$dark-3: hsl(216, 53%, 9%);
+$dark-4: hsl(219, 30%, 18%);
+
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$light-red: hsl(0, 100%, 63%);
+
+.heart {
+  background-color: #ff586b !important;
+}
+
+.cyan {
+  background-color: #00b7c4 !important;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // font-family: 'Inter', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+
+}
+// Breakpoints
+// @media (min-width: 64em){
+//     // styles go here
+//   }
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  "sm": "576px",
+  "md": " 768px",
+  "lg": "992px",
+  "xlg": "1200px",
+  "xxl": "1400px"
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  "sm": "575px",
+  "md": " 767px",
+  "lg": "991px",
+  "xlg": "1199px",
+  "xxl": "1399px"
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+// @media (min-width: 1600px){
+//   .container, .container-sm, .container-md, .container-lg, .container-xl {
+//     max-width: 1420px;
+// }
+// }
+.align-center{
+  align-items: center;
+}
