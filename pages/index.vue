@@ -10,9 +10,7 @@
                 Grow your business and increase your sales with a strengthened
                 online presence.
               </p>
-              <b-button pill variant="info" class="px-4 py-2"
-                >Get Started</b-button
-              >
+              <button class="px-4 py-2 btn-s">Get Started</button>
             </b-col>
             <b-col cols="12" sm="12" md="6" lg="6">
               <SvgLancer class="w-100" />
@@ -144,7 +142,7 @@
         <b-row>
           <b-col>
             <h1>Interested in growing your online presence?</h1>
-            <b-button variant="info" class="btn-talk">Let's Talk</b-button>
+            <button class="btn-talk btn-s">Let's Talk</button>
           </b-col>
         </b-row>
       </b-container>
@@ -196,8 +194,7 @@ export default {
 body {
   background: #28282f;
 }
-.index {
-}
+
 .index-1-2 {
   background: url("@/assets/img/index/Fluid-10s-1920px.svg?inline");
   background-size: cover;
@@ -228,6 +225,31 @@ body {
         }
       }
     }
+  }
+}
+.btn-s {
+  color: #fff !important;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:hover {
+    background: #117a8a !important;
   }
 }
 .index-views {

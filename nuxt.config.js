@@ -43,7 +43,9 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt"
   ],
-
+  bootstrapVue: {
+    components: ['BContainer', 'BRow', 'BCol'],
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend(config) {
@@ -77,6 +79,9 @@ export default {
       preset: {
         stage: 3
       }
-    }
+    },
+    babel: {
+      compact: true,
+     },
   }
 };
