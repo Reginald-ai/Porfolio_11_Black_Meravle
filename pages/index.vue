@@ -171,19 +171,9 @@ export default {
     SvgFinance,
   },
   data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
+    return {};
   },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -264,7 +254,7 @@ body {
   }
 }
 .index-service {
-  background: url("@/assets/img/index/service.svg?inline") no-repeat;
+  background: url("@/assets/img/index/Servicea.svg?inline") no-repeat;
   background-size: cover;
   color: #fff;
   background-position: bottom;
