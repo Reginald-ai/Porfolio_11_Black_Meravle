@@ -254,7 +254,7 @@ body {
   }
 }
 .index-service {
-  background: url("@/assets/img/index/Servicea.svg?inline") no-repeat;
+  background: url("@/assets/img/index/sada.svg?inline") no-repeat;
   background-size: cover;
   color: #fff;
   background-position: bottom;
